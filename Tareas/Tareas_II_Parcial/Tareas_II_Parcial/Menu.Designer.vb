@@ -26,15 +26,14 @@ Partial Class Menu
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnTareas = New System.Windows.Forms.Button()
+        Me.btnTrabajos = New System.Windows.Forms.Button()
         Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnTrabajos = New System.Windows.Forms.Button()
-        Me.btnTareas = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.PanelBarraTitulo.SuspendLayout()
@@ -68,7 +67,6 @@ Partial Class Menu
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.Button1)
         Me.PanelMenu.Controls.Add(Me.btnSalir)
         Me.PanelMenu.Controls.Add(Me.btnTareas)
         Me.PanelMenu.Controls.Add(Me.btnTrabajos)
@@ -77,6 +75,51 @@ Partial Class Menu
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(200, 560)
         Me.PanelMenu.TabIndex = 1
+        '
+        'btnSalir
+        '
+        Me.btnSalir.FlatAppearance.BorderSize = 0
+        Me.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnSalir.Location = New System.Drawing.Point(3, 174)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(197, 40)
+        Me.btnSalir.TabIndex = 2
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'btnTareas
+        '
+        Me.btnTareas.FlatAppearance.BorderSize = 0
+        Me.btnTareas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnTareas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTareas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTareas.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnTareas.Location = New System.Drawing.Point(3, 128)
+        Me.btnTareas.Name = "btnTareas"
+        Me.btnTareas.Size = New System.Drawing.Size(200, 40)
+        Me.btnTareas.TabIndex = 1
+        Me.btnTareas.Text = "Tareas"
+        Me.btnTareas.UseVisualStyleBackColor = True
+        '
+        'btnTrabajos
+        '
+        Me.btnTrabajos.FlatAppearance.BorderSize = 0
+        Me.btnTrabajos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnTrabajos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btnTrabajos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTrabajos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTrabajos.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnTrabajos.Location = New System.Drawing.Point(3, 82)
+        Me.btnTrabajos.Name = "btnTrabajos"
+        Me.btnTrabajos.Size = New System.Drawing.Size(197, 40)
+        Me.btnTrabajos.TabIndex = 0
+        Me.btnTrabajos.Text = "Trabajos Clase"
+        Me.btnTrabajos.UseVisualStyleBackColor = True
         '
         'PanelBarraTitulo
         '
@@ -136,69 +179,6 @@ Partial Class Menu
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
-        'btnTrabajos
-        '
-        Me.btnTrabajos.FlatAppearance.BorderSize = 0
-        Me.btnTrabajos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnTrabajos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.btnTrabajos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTrabajos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTrabajos.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnTrabajos.Location = New System.Drawing.Point(3, 82)
-        Me.btnTrabajos.Name = "btnTrabajos"
-        Me.btnTrabajos.Size = New System.Drawing.Size(197, 40)
-        Me.btnTrabajos.TabIndex = 0
-        Me.btnTrabajos.Text = "Trabajos Clase"
-        Me.btnTrabajos.UseVisualStyleBackColor = True
-        '
-        'btnTareas
-        '
-        Me.btnTareas.FlatAppearance.BorderSize = 0
-        Me.btnTareas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnTareas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.btnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTareas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTareas.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnTareas.Location = New System.Drawing.Point(3, 128)
-        Me.btnTareas.Name = "btnTareas"
-        Me.btnTareas.Size = New System.Drawing.Size(200, 40)
-        Me.btnTareas.TabIndex = 1
-        Me.btnTareas.Text = "Tareas"
-        Me.btnTareas.UseVisualStyleBackColor = True
-        '
-        'btnSalir
-        '
-        Me.btnSalir.FlatAppearance.BorderSize = 0
-        Me.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnSalir.Location = New System.Drawing.Point(3, 174)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(197, 40)
-        Me.btnSalir.TabIndex = 2
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(3, 262)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(203, 40)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -232,5 +212,4 @@ Partial Class Menu
     Friend WithEvents btnSalir As Button
     Friend WithEvents btnTareas As Button
     Friend WithEvents btnTrabajos As Button
-    Friend WithEvents Button1 As Button
 End Class

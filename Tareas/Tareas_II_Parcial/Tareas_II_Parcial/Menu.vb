@@ -80,7 +80,12 @@ Public Class Menu
 
     Private Sub btnTrabajos_Click(sender As Object, e As EventArgs) Handles btnTrabajos.Click
         AbrirFormEnPanel(Of ArreglosUnidimencional)()
-        Button1.BackColor = Color.FromArgb(12, 61, 92)
+        btnTrabajos.BackColor = Color.FromArgb(12, 61, 92)
+    End Sub
+
+    Private Sub btnTareas_Click(sender As Object, e As EventArgs) Handles btnTareas.Click
+        AbrirFormEnPanel(Of BolsaSolidaria)()
+        btnTareas.BackColor = Color.FromArgb(12, 61, 92)
     End Sub
 #End Region
 

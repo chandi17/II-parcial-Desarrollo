@@ -76,10 +76,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArreglosBidimencional%28Banco%29.Designer.vb">
+      <DependentUpon>ArreglosBidimencional%28Banco%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArreglosBidimencional%28Banco%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ArreglosUnidimencional.Designer.vb">
       <DependentUpon>ArreglosUnidimencional.vb</DependentUpon>
     </Compile>
     <Compile Include="ArreglosUnidimencional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolsaSolidaria.Designer.vb">
+      <DependentUpon>BolsaSolidaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BolsaSolidaria.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.vb">
@@ -93,6 +105,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,10 +117,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ArreglosBidimencional%28Banco%29.resx">
+      <DependentUpon>ArreglosBidimencional%28Banco%29.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ArreglosUnidimencional.resx">
       <DependentUpon>ArreglosUnidimencional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolsaSolidaria.resx">
+      <DependentUpon>BolsaSolidaria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
