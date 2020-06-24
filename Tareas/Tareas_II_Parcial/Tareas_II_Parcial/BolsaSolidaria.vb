@@ -24,7 +24,7 @@
     End Sub
 #End Region
     Private Identidad(10) As String
-    Private contador As Integer = 0
+    Private contador As Integer
 
     Private Sub Limpiar()
         txtID.Clear()
@@ -67,7 +67,7 @@
                 tipoBolsa = "Regular"
             End If
             If contador <> 0 Then
-                For i = 0 To contador Step 1
+                For i = 0 To contador - 1 Step 1
                     If Identidad(i) = Identidad(contador) Then
                         MessageBox.Show("Ya se le entrego Bolsa Solidaria a este Ciudadano", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         Exit Sub
